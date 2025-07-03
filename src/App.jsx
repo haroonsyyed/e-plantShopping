@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProductList from './ProductList';
 import './App.css';
@@ -10,10 +9,6 @@ function App() {
 
   const handleGetStartedClick = () => {
     setShowProductList(true);
-  };
-
-  const handleHomeClick = () => {
-    setShowProductList(false);
   };
 
   return (
@@ -37,7 +32,7 @@ function App() {
 
       </div>
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList onHomeClick={handleHomeClick}/>
+        <ProductList />
       </div>
     </div>
   );
